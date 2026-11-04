@@ -6,3 +6,5 @@ const name =["ฝน","นัท","ปิง"]
 const new_name = name.map((names) => `สวัสดี ${names}`)
 console.log(new_name)
 console.log(new_name)
+console.log(new_name)
+console.log(new_name)
