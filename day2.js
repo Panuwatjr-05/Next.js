@@ -9,4 +9,4 @@ const titles = products
 console.log(titles);   // ["เสื้อ", "กางเกง"]
 
 const me = { name: "ภูมิ", age: 21, city: "Pisanulok" }
-console.log(me.name)
+console.log(me.name);
