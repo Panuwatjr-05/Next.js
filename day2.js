@@ -1,7 +1,12 @@
-const prices = [100, 250, 80, 400]
-const new_prices = prices.filter((n)=> n > 90).map((n)=> n*0.9);
-console.log(new_prices)
+const products = [
+    { title: "เสื้อ", price: 300 },
+    { title: "กางเกง", price: 500 },
+    { title: "ถุงเท้า", price: 1000 }
+];
+const titles = products
+    .filter((p) => p.price > 200)
+    .map((n) => `${n.title} ราคา ${n.price} บาท`);
+console.log(titles);   // ["เสื้อ", "กางเกง"]
 
-const ages = [12, 25, 17, 30, 15]
-const new_ages = ages.filter((n)=> n >= 18)
-console.log(new_ages)
+const me = { name: "ภูมิ", age: 21, city: "Pisanulok" }
+console.log(me.name)
