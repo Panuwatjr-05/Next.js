@@ -1,3 +1,9 @@
+const user ={name:"poom",age:21,city:"Bangkok"}
+console.log(user.name)
+
+const {name,age} = user
+console.log(name)
+
 const products = [
     { title: "เสื้อ", price: 300 },
     { title: "กางเกง", price: 500 },
@@ -5,8 +11,6 @@ const products = [
 ];
 const titles = products
     .filter((p) => p.price > 200)
-    .map((n) => `${n.title} ราคา ${n.price} บาท`);
-console.log(titles);   // ["เสื้อ", "กางเกง"]
+    .map(({title,price}) => `${title} ราคา ${price} บาท`);
+console.log(titles);  
 
-const me = { name: "ภูมิ", age: 21, city: "Pisanulok" }
-console.log(me.name);
