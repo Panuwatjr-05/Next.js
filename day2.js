@@ -1,7 +1,7 @@
 const user ={name:"poom",age:21,city:"Bangkok"}
 console.log(user.name)
 
-const {name,age} = user
+const {name,age,city} = user
 console.log(name)
 
 const products = [
